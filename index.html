@@ -1,27 +1,192 @@
-<style>
-body{
-background-image:linear-gradient(45deg,#00ffaf,cyan);
-color:#000;
-display:flex;
-min-height:100vh;
-justify-content:center;
-align-items:center;
-  margin:0;
-}
-a{
-padding:0.5rem 2rem;
-font-size:3em;
-  border:5px solid black;
-  border-radius:200px;
-  transition:0.3s;
-  color:#000;
-  text-decoration:none;
-  font-weight:900;
-}
-  a:hover{
-    color:#00ffaf;
-    background:#000;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet"> 
 
-<a href="https://linkedin.com/in/hemsbansal">Hemsbansal On LinkedIn</a>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Engagement&display=swap" rel="stylesheet"> 
+
+
+
+
+<style>
+	*{box-sizing: border-box;}
+	body{
+		margin: 0;
+		font-family: roboto;
+		background-color: #222;
+		color: white;
+		background-image: url(tilde.svg);
+		background-repeat: no-repeat;
+	}
+	a{
+		color: white;
+		text-decoration: none;
+		transition: 0.3s;
+	}
+	a:hover{
+		color: cyan;
+	}
+	.loading-screen{
+		font-family: 'zen dots';
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0%;
+		transition: top 0.2s;
+		background-color: #222;
+		color: cyan;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		cursor: default;
+		z-index: 100;
+	}
+
+	.loading{
+		width: 180px;
+		margin-top: 2rem;
+		height: 2px;
+		background-color: #000;
+	}
+	.load{
+		width: 100%;
+		height: 100%;
+		background-color: cyan;
+		animation: load 2s linear;
+	}
+	@keyframes load {
+		0%{
+			width: 0%;
+		}
+		40%{
+			width: 65%;
+		}
+		100%{
+			width: 100%;
+		}
+	}
+
+
+	.photo-back{
+		width: 400px;
+		height: 400px;
+		background-color: #333;
+		background-image: url(dp.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius:  30% 70% 73% 27% / 55% 47% 53% 45% 
+	}
+	
+	.web-page{
+		width: 100vw;
+		height: 100vh;
+		display: grid;
+		grid-template-columns: 12fr 75fr 6fr;
+	}
+	.navbar{
+		padding: 3.5rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		writing-mode: sideways-lr;
+		text-orientation: mixed;
+	}
+	.navbar > .logo{
+		font-family: engagement;
+		font-size: 2.5rem;
+		writing-mode: horizontal-tb;
+	}
+
+	.main-content{
+		display: grid;
+		grid-template-columns: 3fr 5fr;
+		margin: 3rem 0;
+	}
+	.main-content .image{
+		opacity: 0.7;
+	}
+
+	.main-content .intro{
+		display: flex;
+		align-items: center;
+		margin-top: 3rem;
+		font-size: 10vw;
+		font-weight: 900;
+	}
+
+	.footer{
+		grid: 1;
+		padding-top: 2rem;
+		text-align: center;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		writing-mode: sideways-lr;
+		text-orientation: mixed;
+	}
+	.footer a{
+		margin-top: 1.5rem;
+	}
+	.made-with{
+		/* transform: rotate(90deg) translate(0%); */
+		height: 275px;
+	}
+	
+</style>
+</head>
+<body>
+	
+
+
+	<div class="loading-screen">
+		Bansal ❤️ Codes
+		<div class="loading">
+			<div class="load"></div>
+		</div>
+	</div>
+
+
+	<div class="web-page">
+
+		<nav class="navbar">
+			<div class="made-with">designed w/ <button title="Press Heart!">❤️</button> By <a href="#">Hemant Bansal</a></div>
+
+			<div class="logo">Bansal</div>
+
+		</nav>
+
+		<section class="main-content">
+			<div class="image"></div>
+			<div class="intro">
+				Hello<br>I am<br>Hemant
+			</div>
+		</section>
+		
+		<footer class="footer">
+			
+			<a href="https://www.facebook.com/HemsBansal/">FACEBOOK</a>
+			<a href="https://www.linkedin.com/in/HemsBansal/">LINKEDIN</a>
+			<a href="https://www.twitter.com/HemsBansal/">TWITTER</a>
+			<a href="https://www.github.com/HemsBansal/:">GITHUB</a>
+		</footer>
+
+	</div>
+
+
+	<script>
+		window.onload = ()=>{
+			setInterval(() => {
+				document.querySelector('.loading-screen').style.display = 'none';
+			}, 2600);
+		}
+	</script>
+</body>
+</html>

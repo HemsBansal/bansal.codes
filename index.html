@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemsbansal|Bansal.codes</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+            font-family: roboto;
+        }
+        ::-webkit-scrollbar{
+            width: 0px;
+        }
+       
+        body{
+            background-color: #000;
+            color: white;
+            min-height: 200vh;
+        }
+        a{color: #fff;
+        text-decoration: none;
+        }
+
+        nav{
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #444;
+            position: fixed;
+            padding: 0 2rem;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navbar{
+            width: 100%;
+            max-width: 1100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
+        }
+        .navbar > ul{
+            display: flex;
+        }
+
+        .navbar>ul a{
+            margin-left: 2.5rem;
+            font-weight: 900;
+            padding: 10px 0;
+        }
+        .active{
+            border-bottom: 2px solid white;
+        }
+
+
+        footer{
+            width: 100%;
+            margin: auto;
+            height: 50px;
+            border-top: 1px solid #333;
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .social{
+            width: 100%;
+            max-width: 1000px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .fab{
+            padding: 0.5rem 1.5rem;
+            color:#fff;
+            transition: 0.2s;
+            border: 1px solid transparent;
+            background-color:rgba(255, 255, 355, 0.1);
+        }
+        .fab:hover{
+            color: deepskyblue;
+            border: 1px solid deepskyblue;
+        }
+
+        .main-section{
+            width: 100%;
+            height: calc(100vh - 100px);
+            position: fixed;
+            top: 50px;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="" class="logo">hemsbansal</a>
+
+            <ul class="menu-actions">
+                <a href="#" class="active">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Skills</a>
+                <a href="#">Gallery</a>
+                <a href="#">Contact</a>
+
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="main-section">
+        <h1>Hi, I'm<br>
+            <span class="name">Hemant Bansal</span>
+            <br>i'm Web Designer
+        </h1>
+
+        <p>
+            I am very interested in the Creative Field. Being a designer is one of my life goals, with a talent in this field I want to always learn new things and strethen every process.
+        </p>
+
+        <div class="cta-btn">
+            <a href="#"></a>
+        </div>
+    </div>
+
+    
+    <footer>
+       
+        <div class="social">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>

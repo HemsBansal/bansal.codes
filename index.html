@@ -17,19 +17,16 @@
       box-sizing: border-box;
     }
     body{
-      /* filter: invert(1); */
       margin: 0;
       background-image: url(pexels-bg.jpg);
       background-position: center;
-      
       background-repeat: no-repeat;
       background-size: cover;
       background-color: #999;
     }
 
     .container{
-      width: 100%;
-      /* min-width: 500px; */
+      width: 80%;
       padding: 30px;
       min-height: 100vh;
       margin: 100px auto;
@@ -131,6 +128,13 @@
     #heart:focus, #heart:hover{
       color: red;
       background-color: black;
+    }
+    
+    
+    @media screen and (max-width:525px){
+      .container{
+        width:100%
+      }
     }
   </style>
 </head>
